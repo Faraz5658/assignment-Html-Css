@@ -1,0 +1,242 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {height: 50px;
+       width: 100%;
+        background: #3D2B22;}
+nav ul {list-style: none;}
+nav ul li {float: left;}
+nav ul li a {text-decoration: none;
+          background: #3D2B22;
+          color:#F8E1D6;
+          height: 50px;
+          width: 150px;
+          display: block;
+          text-align: center;
+          line-height: 50px;
+          font-family: corbel;
+          font-weight: bold;}
+nav ul li a:hover {background: #3D2B22; color: aqua;}
+
+
+.mainbg {
+
+background-image: url(images/istockphoto-1434768642-612x612.jpg);
+
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vh;
+z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mainone {
+  max-width: 50%;
+}
+
+.mainone h1 {
+  font-size: 2rem;
+  color: #0dcdea;
+  z-index: 1;
+}
+
+.mainone span {
+  font-size: 1rem;
+  color: #666;
+  z-index: 1;
+}
+
+.mainone p {
+  font-size: 1rem;
+  color: #888;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+.read_more {
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  background-color: #ddd;
+  border-radius: 10px;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.read_more:hover {
+  color: black;
+}
+
+.maintwo img {
+  width: 100%;
+}
+
+.maincard{
+background-image: url(images/istockphoto-1434768642-612x612.jpg);
+
+background-repeat: no-repeat;
+background-size: cover;
+height: 125vh;
+z-index: 0;
+display: flex;
+flex-wrap: wrap;
+}
+
+
+.Our_box {
+
+  flex-grow: 5;
+  flex-basis: 300;
+  width: 20%;
+  box-shadow: #ddd 0px 0px 10px 0px;
+  border-radius: 23px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 60px 0;
+  margin: 20px;
+  color: aqua;
+  background-color: rgb(47, 52, 52);
+  transition: all 1s linear;
+}
+
+.Our_box:hover {
+  color: black;
+  background-color: #564f4f;
+  transition: all 1s linear;
+}
+
+.Our_box img {
+  height: 30px;
+  width: 30px;
+}
+
+.h2{
+color: rgb(8, 8, 8);
+text-align: center;
+padding: 50px;
+}
+
+.mainx {
+  background-image: url('images/disco.jpg'); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  padding: 40px; /* Adds space around the content */
+  color: white; /* White text color for contrast */
+  text-align: center; /* Centers the text */
+  border-radius: 10px; /* Rounded corners for the div */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.mainx h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.mainx h4 {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
+
+.call {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #06010157;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.callone {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.callone h2 {
+  font-size: 36px;
+  color: #333;
+}
+
+.callone h4 {
+  font-size: 18px;
+  color: #777;
+  margin-top: 10px;
+}
+
+.read_more {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.callmain {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.from {
+  flex: 1;
+  padding: 20px;
+}
+
+.from input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.from input:focus {
+  outline: none;
+  border-color: #007BFF;
+}
+
+.from button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007BFF;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.from button:hover {
+  background-color: #0056b3;
+}
+
+.image {
+  flex: 1;
+  padding: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
