@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater Number Finder</title>
+</head>
+<body>
+    <button onclick="change()">Click Me</button>
+</body>
+<script>
+    function change() {
+
+        let num1 = +(prompt("Enter First Number:"));
+        let num2 = +(prompt("Enter Second Number:"));
+        
+        
+        if(num1 > num2) {
+            alert(num1 + " is greater than " + num2);
+        } else if(num2 > num1) {
+            alert(num2 + " is greater than " + num1);
+        } else {
+            alert("Both numbers are equal");
+        }
+    }
+</script>
+</html>
