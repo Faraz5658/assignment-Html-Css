@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .calculator {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 1rem;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="input-group">
+            <label for="value">Enter Value:</label>
+            <input type="number" id="value" step="any" required>
+        </div>
+        
+        <div class="input-group">
+            <label for="from-unit">From Unit:</label>
+            <select id="from-unit">
+                <option value="mm">Millimeter (mm)</option>
+                <option value="cm">Centimeter (cm)</option>
+                <option value="inch">Inch</option>
+                <option value="foot">Foot</option>
+                <option value="m">Meter (m)</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="to-unit">To Unit:</label>
+            <select id="to-unit">
+                <option value="mm">Millimeter (mm)</option>
+                <option value="cm">Centimeter (cm)</option>
+                <option value="inch">Inch</option>
+                <option value="foot">Foot</option>
+                <option value="m">Meter (m)</option>
+            </select>
+        </div>
+
+        <button onclick="convertUnits()">Convert</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        const conversionFactors = {
+            mm: 0.001,
+            cm: 0.01,
+            inch: 0.0254,
+            foot: 0.3048,
+            m: 1
+        };
+
+        function convertUnits() {
+            const inputValue = parseFloat(document.getElementById('value').value);
+            const fromUnit = document.getElementById('from-unit').value;
+            const toUnit = document.getElementById('to-unit').value;
+            const resultElement = document.getElementById('result');
+
+            if (isNaN(inputValue)) {
+                resultElement.textContent = "Please enter a valid number";
+                resultElement.style.display = 'block';
+                return;
+            }
+
+
+            const meters = inputValue * conversionFactors[fromUnit];
+            
+            const result = meters / conversionFactors[toUnit];
+
+            resultElement.textContent = `${inputValue} ${fromUnit} = ${result.toFixed(4)} ${toUnit}`;
+            resultElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
