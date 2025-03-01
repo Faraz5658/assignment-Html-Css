@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enter student data</title>
+    <script>
+        function show() {
+            var name = prompt("Enter Name:");
+            var em = ("   ");
+            var engMarks = parseFloat(prompt("Enter English Marks:"));
+            var urduMarks = parseFloat(prompt("Enter Urdu Marks:"));
+            var mathsMarks = parseFloat(prompt("Enter Maths Marks:"));
+            var sstMarks = parseFloat(prompt("Enter SST Marks:"));
+
+            var totalMarks = engMarks + urduMarks + mathsMarks + sstMarks;
+            var percentage = (totalMarks / 400) * 100;
+
+            var result = `Name: ${name} \nENG: ${engMarks}${em}URDU: ${urduMarks}${em}MATHS: ${mathsMarks}${em}SST: ${sstMarks}\nTotal Marks: ${totalMarks}\nPercentage: ${percentage}%`;
+            alert(result);
+            
+            if(percentage >= 90 && percentage<=100){
+                alert("A+");
+            }
+            else if(percentage>=80&& percentage<=89){
+                alert("A");
+            }
+            else if(percentage>=70&& percentage<=79){
+                alert("B");
+            }
+            else if(percentage>=60&& percentage<=69){
+                alert("C");
+            }
+            else{
+                alert(false)
+            }
+        }
+    </script>
+</head>
+<body >
+    <button onclick="show()">ENTER DATA</button>
+</body>
+</html>
