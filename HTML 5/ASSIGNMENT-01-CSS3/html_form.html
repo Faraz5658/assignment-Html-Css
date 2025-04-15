@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <section>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Required Information</legend>
+                    <input type="hidden" value="101" />
+                    <label>FULLNAME: </label><input type="text" placeholder="Khalid Khan" /><br />
+                    <label>EMAIL: </label><input type="email" placeholder="khalid@gamil.com" required  /><br />
+                    <label>PASSWORD: </label><input type="password" placeholder="" required  /><br />
+                    <label>DOB: </label><input type="date" /><br />
+                    <label>JOINING MONTH: </label><input type="month" /><br />
+                    <label>CURRENT AGE: </label><input type="number" /><br />
+                    <label>COUNTRY: </label>
+                    <select>
+                        <option>PAKISTAN</option>
+                        <option>AFGHANISTAN</option>
+                        <option>IRAN</option>
+                        <option>INDIA</option>
+                        <option>CHINA</option>
+                        <option>UAE</option>
+                    </select><br />
+                </fieldset>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>GEDNER: </label>
+                    <input type="radio" name="gender" /><label>MALE</label>
+                    <input type="radio" name="gender" /><label>FEMALE</label><br>
+                    <label>LANGUAGES: </label>
+                    <input type="checkbox" /><label>ENGLISH</label>
+                    <input type="checkbox" /><label>URDU</label>
+                    <input type="checkbox" /><label>PERSION</label>
+                    <input type="checkbox" /><label>CHINESE</label>
+                    <input type="checkbox" /><label>PASHTO</label><br />
+                    <label>COMMENTS: </label><textarea cols="30" rows="10"></textarea><br />
+                    <label>REGION: </label><input type="text" value="KPK" /><br />
+                    <label>RELIGION: </label><input type="text" value="ISLAM" readonly /><br />
+                </fieldset>
+                <fieldset>
+                    <legend>Extra Information</legend>
+                    <label>EDUCATION: </label><input type="text" disabled /><br />
+                    <label>FAVORITE COLOR: </label><input type="color" /><br />
+                    <label>COUNTRY CODE: </label><input type="text" pattern="[a-zA-Z]{2}"/><br />
+                </fieldset>
+                <input type="reset" />
+                <input type="submit" value="Register" />
+            </form>
+        </article>
+    </section>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</body>
+</html>
